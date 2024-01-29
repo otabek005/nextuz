@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-[#ECF4FF]">
+    <header class="fixed w-full pb-3 bg-white" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); z-index: 150;">
+        <nav>
+            <div class="flex justify-end mr-[200px] gap-10 mb-3 p-1">
+                <div class="flex items-center gap-3">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <g clip-path="url(#clip0_651_11824)">
+                              <path d="M15 3H3C2.175 3 1.5075 3.675 1.5075 4.5L1.5 13.5C1.5 14.325 2.175 15 3 15H15C15.825 15 16.5 14.325 16.5 13.5V4.5C16.5 3.675 15.825 3 15 3ZM15 6L9 9.75L3 6V4.5L9 8.25L15 4.5V6Z" fill="#1E1E1E"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_651_11824">
+                                <rect width="18" height="18" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                    </span>
+                    Aloqa uchun
+                </div>
+                <select name="country" id="country">
+                    <option value="UZ">UZ</option>
+                    <option value="RU">RU</option>
+                    <option value="EN">EN</option>
+                </select>
+                
+            </div>
+            <div class="header-bottom flex justify-between items-center container">
+                <img src="./img/Logo.svg" alt="logo">
+                <div class="flex items-center">
+                    <button class="round text-red-100 rounded-lg bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 flex items-center gap-3 py-[11px] px-[19px] ">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <g clip-path="url(#clip0_3133_2157)">
+                                <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3133_2157">
+                                    <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                        Katalog</button>
+                    <div class="flex items-center ml-[60px]">
+                        <input type="text" placeholder="Maxsulotlarni izlash" class="py-[14px] px-[18px] rounded-l-lg border w-[336px]">
+                        <span class="py-[14px] px-[18px] bg-[#0D63F3] rounded-r-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <g clip-path="url(#clip0_651_11838)">
+                                <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_651_11838">
+                                    <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="items-center flex justify-between">
+                    <button class="p-[11px] bg-[#ECF4FF] rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_3133_3884)">
+                              <path d="M16.5 3C14.76 3 13.09 3.81 12 5.09C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.42 2 8.5C2 12.28 5.4 15.36 10.55 20.04L12 21.35L13.45 20.03C18.6 15.36 22 12.28 22 8.5C22 5.42 19.58 3 16.5 3ZM12.1 18.55L12 18.65L11.9 18.55C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5C9.04 5 10.54 5.99 11.07 7.36H12.94C13.46 5.99 14.96 5 16.5 5C18.5 5 20 6.5 20 8.5C20 11.39 16.86 14.24 12.1 18.55Z" fill="#0D63F3"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_3133_3884">
+                                <rect width="24" height="24" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                    </button >
+                    <button class="p-[11px] bg-[#ECF4FF] rounded-xl ml-[26px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_3133_4823)">
+                              <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#0D63F3"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_3133_4823">
+                                <rect width="24" height="24" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                    </button>
+                    <button class="ml-[59px] py-[13px] px-[15px] rounded-xl" style="background: var(--Button-gradient-20, linear-gradient(270deg, rgba(77, 94, 246, 0.20) 0%, rgba(246, 77, 77, 0.20) 100%));">Kirish</button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="pt-[140px]">
+            <div class="container">
+                <div id="default-carousel" class="relative" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                            <img src="./img/intro.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./img/intro.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./img/intro.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="hidden">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="hidden">Next</span>
+                        </span>
+                    </button>
+                </div>
+                <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+            </div>
+        </section>
+
+        <section class="mb-[20px]">
+            <div class="container">
+                <h2 class="mb-[20px] font-[500] text-[28px]">Kategoriyalar</h2>
+                <div class="flex justify-between gap-[20px]">
+                    <div class="py-[16px] text-center font-[500] bg-white w-[135px]">
+                        <img src="./img/telefon.png" alt="">
+                        <p>Smartfonlar</p>
+                    </div>
+                    <div class="py-[16px] text-center font-[500] bg-white w-[135px]">
+                        <img src="./img/noutbook.png" alt="">
+                        <p>Kompyuterlar va
+                            notebooklar</p>
+                    </div>
+                    <div class="py-[16px] text-center font-[500] bg-white w-[135px]">
+                        <img src="./img/televizor.png" alt="">
+                        <p>Televizorlar</p>
+                    </div>
+                    <div class="py-[16px] text-center font-[500] bg-white w-[135px]">
+                        <img src="./img/soat.png" alt="">
+                        <p>Aqlli soatlar</p>
+                    </div>
+                    <div class="py-[16px] text-center font-[500] bg-white w-[135px]">
+                        <img src="./img/airpots.png" alt="">
+                        <p>Quloqchinlar</p>
+                    </div>
+                    <div class="py-[16px] text-center font-[500] bg-white w-[135px]">
+                        <img src="./img/konditsioner.png" alt="">
+                        <p>Konditsioner</p>
+                    </div>
+                    <div class="py-[16px] text-center font-[500] bg-white w-[135px]">
+                        <img src="./img/xolodilnik.png" alt="">
+                        <p>Sovutkichlar</p>
+                    </div>
+                    <div class="py-[16px] text-center font-[500] bg-white w-[135px]">
+                        <img src="./img/kirmoshina.png" alt="">
+                        <p>Kir yuvish 
+                            mashinalari</p>
+                    </div>
+                </div>
+                <button class="w-full mt-[20px] bg-white font-[500] p-[17px]">Batafsil</button>
+            </div>
+        </section>
+
+        <section class="mb-[60px]">
+            <div class="container">
+                <h2 class="mb-[20px] font-[500] text-[28px]">Eng ko’p sotilgan</h2>
+                <div class="flex flex-wrap gap-[20px] justify-between">
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <button class="w-full mt-[20px] bg-white font-[500] p-[17px]">Batafsil</button>
+            </div>
+        </section>
+
+        <section class="mb-[86px]">
+            <div class="container">
+                <div id="default-carousel" class="relative" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                            <img src="./img/slide.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./img/slide.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./img/slide.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="hidden">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="hidden">Next</span>
+                        </span>
+                    </button>
+                </div>
+                <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+            </div>
+        </section>
+
+        <section class="mb-[60px]">
+            <div class="container">
+                <h2 class="mb-[20px] font-[500] text-[28px]">Eng ommabop</h2>
+                <div class="flex flex-wrap gap-[20px] justify-between">
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-[10px] px-[15px] w-[200px]">
+                        <img src="./img/komp.png" alt="img">
+                        <h3 class="text-[#0D63F3] font-[500] text-[18px] mb-2">299 000 so’m</h3>
+                        <p class="w-[197px] font-[500] mb-[33px] ">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                        <p class="text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                        <div class="flex gap-[40px] items-center">
+                            <button class="py-[10px] bg-[#0D63F3] px-[10px] rounded-xl text-white cursor-pointer font-[500]">Sotib olish</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_3133_172)">
+                                      <path d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="#6C757D"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3133_172">
+                                        <rect width="24" height="24" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <button class="w-full mt-[20px] bg-white font-[500] p-[17px]">Batafsil</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
