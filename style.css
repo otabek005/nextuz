@@ -10,3 +10,45 @@
     padding: 0 185px;
     margin: 0 auto;
 }
+
+
+.carusel{
+    max-width: 1230px;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carusel-list{
+    display: flex;
+    width: 100%;
+    max-width: 1230px;
+    gap: 60px;
+}
+
+.carusel-items{
+    width: 100%;
+    max-width: 1230px;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+
+.arr-left, .arr-right{
+    position: absolute;
+    top: 45%;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.arr-left{
+    left: 20px;
+}
+
+.arr-right{
+    right: 20px;
+}
+
+.slide{
+    transform: translateX(-0px);
+    transition: all 0.3s linear;
+}
