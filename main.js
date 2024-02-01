@@ -22,9 +22,7 @@ function prewslide(){
 }
 
 
-
 let card = document.querySelector('#cards');
-
 for (let index = 0; index < 10; index++) {
     let car = document.createElement('div')
     car.innerHTML = `
@@ -83,3 +81,201 @@ for (let index = 0; index < 10; index++) {
     `
     cardd.append(car);
 }
+
+
+let kirish = document.querySelector('#kirish');
+let kirishpage = document.querySelector('#register');
+let exit = document.querySelector('#exit')
+
+kirish.addEventListener("click", ()=>{
+    kirishpage.style.display = "block"; 
+    document.body.style.overflow="hidden";
+});
+
+exit.addEventListener("click", ()=>{
+  kirishpage.style.display = "none";
+  document.body.style.overflow="visible";
+});
+
+
+let kirish2 = document.querySelector("#kirish2");
+let cardregister = document.querySelector('#card');
+
+kirish2.addEventListener('click', ()=>{
+    cardregister.innerHTML = `
+    <div class="flex flex-col ">
+    <h2 class="font-[500] text-[36px] mb-4">Telefon raqam orqali kirish</h2>
+    <span id="exit2" class="absolute right-[25px] top-[5px] text-[30px] cursor-pointer"><i class='bx bx-window-close'></i></span>
+    <input type="text" placeholder="Telefon raqam" id="telefon" class="border-[1px] border-[#00000058] py-3 px-2 rounded-xl mb-[13px]">
+    <input type="password" placeholder="Parol" id="parol"  class="border-[1px] border-[#00000058] py-3 px-2 rounded-xl mb-[13px]">
+    <button id="kirish3" class="w-full bg-[#0D63F3] text-white font-[500] py-3 rounded-2xl mb-[5px]">Kirish</button>
+    <button class="text-[#0D63F3]">Parolni unutdingizmi ?</button>
+    </div>
+    `
+    let telefon = document.querySelector('#telefon')
+    let exit2 = document.querySelector('#exit2')
+    exit2.addEventListener("click", ()=>{
+      kirishpage.style.display = "none";
+      document.body.style.overflow="visible";
+    });
+
+    let kirish3 = document.querySelector("#kirish3");
+    kirish3.addEventListener('click', ()=> {
+      cardregister.innerHTML= `
+      <div class="flex flex-col ">
+      <h2 class="font-[500] text-[36px] mb-4">Telefon raqamini kiriting</h2>
+      <span id="exit3" class="absolute right-[25px] top-[5px] text-[30px] cursor-pointer"><i class='bx bx-window-close'></i></span>
+      <input type="text" placeholder="Telefon raqam" id="telefon2" class="border-[1px] border-[#00000058] py-3 px-2 rounded-xl mb-[13px]">     
+      <button id="kirish4" class="w-full bg-[#0D63F3] text-white font-[500] py-3 rounded-2xl mb-[5px]">Kodni qabul qilish</button>
+      </div>
+      `
+
+      let telefon2 = document.querySelector('#telefon2')
+      telefon2.value = telefon.value;
+
+
+      let exit3 = document.querySelector('#exit3')
+      exit3.addEventListener("click", ()=>{
+        kirishpage.style.display = "none";
+        document.body.style.overflow="visible";
+      });
+
+
+      let kirish4 = document.querySelector('#kirish4')
+      kirish4.addEventListener('click', () => {
+          kirishpage.style.display = "none";
+          document.body.style.overflow="visible";
+          kirish.style.display = 'none'
+
+          let user = document.querySelector('#user');
+          let panel = document.querySelector('#user_panel')
+          user.style.display='block';
+          user.innerHTML = `<i class='bx bx-user' ></i>`
+
+          user.addEventListener('click', ()=> {
+            panel.style.display = 'block'
+          })
+
+          let main = document.querySelector('main');
+          main.addEventListener('click', ()=>{
+            panel.style.display = "none"
+          })
+          
+      })
+    })
+});
+
+let katalog = document.querySelector('#katalog_panel')
+let katalog_btn = document.querySelector('#katalog')
+let idmain = document.querySelector('#main')
+
+katalog_btn.addEventListener('click', ()=> {
+    katalog.innerHTML = `
+    <div id="panel_katalog" class="absolute w-[1200px] h-[800px] bg-white top-[40px] left-[-360px] flex p-5 justify-between pr-[200px]">
+    <ul class="bg-[#ECF4FF] w-[300px] p-5">
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500]  mb-3">Aksiya</li>
+       <li class="font-[500] ">Aksiya</li>
+    </ul>
+    <ul>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500]  mb-3">Samsung</li>
+       <li class="font-[500] ">Samsung</li>
+    </ul>
+    <div>
+       <ul class="mb-[60px]">
+           <li>Samsung brendi</li>
+           <li>S seriyalar</li>
+           <li>A seriyalar</li>
+           <li>Note seriyalar</li>
+       </ul>
+       <ul class="mb-[60px]"">
+           <li>Samsung brendi</li>
+           <li>S seriyalar</li>
+           <li>A seriyalar</li>
+           <li>Note seriyalar</li>
+       </ul>
+       <ul class="mb-[60px]">
+           <li>Samsung brendi</li>
+           <li>S seriyalar</li>
+           <li>A seriyalar</li>
+           <li>Note seriyalar</li>
+       </ul>
+    </div>
+    <div>
+       <ul class="mb-[60px]">
+           <li>Samsung brendi</li>
+           <li>S seriyalar</li>
+           <li>A seriyalar</li>
+           <li>Note seriyalar</li>
+       </ul>
+       <ul class="mb-[60px]"">
+           <li>Samsung brendi</li>
+           <li>S seriyalar</li>
+           <li>A seriyalar</li>
+           <li>Note seriyalar</li>
+       </ul>
+       <ul class="mb-[60px]">
+           <li>Samsung brendi</li>
+           <li>S seriyalar</li>
+           <li>A seriyalar</li>
+           <li>Note seriyalar</li>
+       </ul>
+    </div>
+    <div>
+       <ul class="mb-[60px]">
+           <li>Samsung brendi</li>
+           <li>S seriyalar</li>
+           <li>A seriyalar</li>
+           <li>Note seriyalar</li>
+       </ul>
+       <ul class="mb-[60px]"">
+           <li>Samsung brendi</li>
+           <li>S seriyalar</li>
+           <li>A seriyalar</li>
+           <li>Note seriyalar</li>
+       </ul>
+       <ul class="mb-[60px]">
+           <li>Samsung brendi</li>
+           <li>S seriyalar</li>
+           <li>A seriyalar</li>
+           <li>Note seriyalar</li>
+       </ul>
+    </div>
+</div>
+    `
+    katalog.style.display = 'block';
+})
+idmain.addEventListener('click', ()=> {
+    katalog.style.display = 'none';
+})
+
+
